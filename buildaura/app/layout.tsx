@@ -1,10 +1,14 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: "BuildAura — Build Beyond Ordinary",
   description:
     "Professional web development and e-commerce solutions. Creating modern, responsive websites that drive results. Trusted by House of Evolve.",
+  icons: {
+    icon: "/buildaura_logo.svg",
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -19,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="bg-[#0b0b09] text-[#f0ece3] antialiased">
+
         {children}
       </body>
     </html>
