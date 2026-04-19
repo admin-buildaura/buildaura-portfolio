@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import Image from "next/image"
+import Header from "@/components/Header"
 
 export const metadata: Metadata = {
   title: "BuildAura — Build Beyond Ordinary",
@@ -22,8 +23,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body className="bg-[#0b0b09] text-[#f0ece3] antialiased">
-
+      <body className="bg-[#0b0b09] text-[#f0ece3] antialiased pt-24">
+        <Header />
         {children}
       </body>
     </html>
